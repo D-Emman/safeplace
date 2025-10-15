@@ -4,7 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import '../services/auth_service.dart';
 
 
-part 'auth_state.dart'
+// part 'auth_state.dart'
 
 class AuthCubit extends Cubit<AuthState> {
   final AuthService _service = AuthService();

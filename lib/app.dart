@@ -1,3 +1,4 @@
+import 'package:Safeplace/src/blocs/auth_cubic.dart';
 import 'package:flutter/material.dart';
 import 'src/core/theme.dart';
 import 'src/blocs/auth_cubit.dart';

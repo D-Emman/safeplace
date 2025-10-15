@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../blocs/auth_cubit.dart';
+import '../../blocs/auth_cubic.dart';
 import '../../services/firestore_service.dart';
 
 
@@ -18,4 +18,5 @@ class _HomeScreenState extends State<HomeScreen> {
 
 
   @override
-  Widget bui
+  Widget build(context)
+}
