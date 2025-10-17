@@ -1,5 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-
+ //postmodel details
 class PostModel {
   final String id;
   final String userId;
@@ -34,11 +34,10 @@ class PostModel {
     isReported: map['isReported'] ?? false,
   );
 
-
   Map<String, dynamic> toMap() => {
-    'userId': userId,
-    'username': username,
-    'content': content,
+    'userId':  userId,
+    'username':  username,
+    'content':  content,
     'tags': tags,
     'supportCount': supportCount,
     'timestamp': FieldValue.serverTimestamp(),
