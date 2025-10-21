@@ -35,6 +35,7 @@ class PostModel {
   );
 
   Map<String, dynamic> toMap() => {
+
     'userId':  userId,
     'username':  username,
     'content':  content,
