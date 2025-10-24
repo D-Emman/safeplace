@@ -1,4 +1,4 @@
-import 'package:Safeplace/src/blocs/auth_cubic.dart';
+import 'package:Safeplace/src/blocs/auth_cubit.dart';
 import 'package:flutter/material.dart';
 import 'src/core/theme.dart';
 import 'src/blocs/auth_cubit.dart';
@@ -37,6 +37,7 @@ class EntryPoint extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocBuilder<AuthCubit, AuthState>(
       builder: (context, state) {
+
         if (state is Authenticated) return const HomeScreen();
         if (state is Unauthenticated) return const LoginScreen();
         return const Scaffold(body: Center(child: CircularProgressIndicator()));

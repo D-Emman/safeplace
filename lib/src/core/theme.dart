@@ -7,7 +7,8 @@ class AppTheme {
     scaffoldBackgroundColor: Colors.grey[50],
     visualDensity: VisualDensity.adaptivePlatformDensity,
     textTheme: const TextTheme(
-      bodyText2: TextStyle(fontSize: 16.0),
+
+      // TextStyle(fontSize: 16.0),
     ),
   );
 
@@ -17,7 +18,7 @@ class AppTheme {
     scaffoldBackgroundColor: Colors.black,
     visualDensity: VisualDensity.adaptivePlatformDensity,
     textTheme: const TextTheme(
-      bodyText2: TextStyle(fontSize: 16.0),
+      // bodyText2: TextStyle(fontSize: 16.0),
     ),
   );
 }
