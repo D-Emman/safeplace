@@ -15,7 +15,7 @@ class AuthService {
     return cred;
   }
 
-
+//LOGIN FUNCTIONALITY
   Future<UserCredential> login({required String email, required String password}) async {
     final cred = await _auth.signInWithEmailAndPassword(email: email, password: password);
     final token = await cred.user?.getIdToken();

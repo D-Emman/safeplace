@@ -4,6 +4,7 @@ import 'package:firebase_storage/firebase_storage.dart';
 
 class StorageService {
   final FirebaseStorage _storage = FirebaseStorage.instance;
+  var stored;
 
   Future<String> uploadAvatar(String userId, Uint8List bytes) async {
     final ref = _storage.ref().child('avatars/$userId.jpg');
@@ -16,6 +17,8 @@ class StorageService {
       final ref = _storage.refFromURL(url);
       await ref.delete();
     } catch (e) {
+      //print(e);
+
       // ignore if missing
     }
   }

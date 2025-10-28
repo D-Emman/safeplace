@@ -5,7 +5,7 @@ class Validators {
     return null;
   }
 
-
+// Email validation
   static String? email(String? v) {
     if (v == null || v.isEmpty) return 'Email required';
     final pattern = RegExp(r"^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}\$");

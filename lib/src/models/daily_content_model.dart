@@ -17,5 +17,6 @@ class DailyContent {
     'date': Timestamp.fromDate(date.toUtc()),
     'message': message,
     'advice': advice,
+
   };
 }

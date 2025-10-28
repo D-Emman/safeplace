@@ -15,6 +15,7 @@ class UserModel {
     this.lastActiveDate,
   });
 
+  // Factory constructor to create a UserModel from a Map
   factory UserModel.fromMap(String id, Map<String, dynamic> map) => UserModel(
     id: id,
     username: map['username'] ?? 'Anonymous',

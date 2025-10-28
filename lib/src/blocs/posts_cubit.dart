@@ -3,6 +3,7 @@ import 'package:equatable/equatable.dart';
 import '../services/firestore_service.dart';
 import '../models/post_model.dart';
 
+
 part 'posts_state.dart';
 
 class PostsCubit extends Cubit<PostsState> {
